@@ -34,20 +34,6 @@ public class InsertionSort {
 		
 		return output;
 	}
-	public static void main(String[] args) {
-		InsertionSort test = new InsertionSort();
-		ListADT<Integer> input = new JavaList<>();
-		input.addBack(6);
-		input.addBack(2);
-		input.addBack(9);
-		input.addBack(70);
-		input.addBack(1);
-		input.addBack(24);
-		
-		System.out.println(input);
-		ListADT<Integer> output = test.sort(input);
-		System.out.println(output);
 
-	}
 
 }

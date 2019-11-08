@@ -6,7 +6,9 @@ import me.jjfoley.adt.impl.JavaList;
 
 public class SelectionSort {
 	
-	public ListADT<Integer> sort(ListADT<Integer> input){
+	public ListADT<Integer> sort(ListADT<Integer> in){
+		ListADT<Integer> input = new JavaList<>();
+		input.addAll(in);
 		//makes an empty list to copy sorted list into
 		ListADT<Integer> output = new JavaList<>();
 		int smallIndex;
@@ -30,22 +32,6 @@ public class SelectionSort {
 			
 		}
 		return output;
-	}
-	//tests sorting method
-	public static void main(String[] args) {
-		SelectionSort test = new SelectionSort();
-		ListADT<Integer> input = new JavaList<>();
-		input.addBack(6);
-		input.addBack(2);
-		input.addBack(9);
-		input.addBack(70);
-		input.addBack(1);
-		input.addBack(24);
-		
-		System.out.println(input);
-		ListADT<Integer> output = test.sort(input);
-		System.out.println(output);
-
 	}
 
 }
